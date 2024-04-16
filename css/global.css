@@ -1,0 +1,45 @@
+body {
+  font-family: arial;
+  margin: 0px;
+  color: #141414;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.subtituloformacao {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  left: 100px;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .subtitulo {
+    font-size: 3rem;
+  }
+}
+
+.subtitulo {
+  text-align: center;
+}
+
+.projetos {
+  color: #fff;
+}

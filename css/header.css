@@ -1,0 +1,42 @@
+.header {
+  background-color: rgb(86, 11, 156);
+  max-width: 1400px;
+  padding: 40px 20px;
+
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+
+.titulo-letticia {
+  font-size: 25px;
+  color: #fff;
+  left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}

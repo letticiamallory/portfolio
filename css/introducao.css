@@ -1,0 +1,76 @@
+.introducao {
+  background: url(../imagensdoportfolio/WhatsApp\ Image\ 2024-04-11\ at\ 20.25.33.jpeg);
+
+  padding: 60px 80px;
+  margin: 0 auto;
+  height: 64vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.introducao h1 {
+  color: rgb(238, 227, 238);
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 50px;
+  position: relative;
+  text-align: start;
+}
+
+.introducao h1::before {
+  content: "";
+  display: inline-block;
+  width: 130px;
+  height: 100px;
+  background: url(../imagensdoportfolio/Joyful\ web\ developer\ engrossed\ in\ their\ work.jpeg);
+  position: absolute;
+  top: -15px;
+  left: -200px;
+  z-index: -1;
+}
+
+.introducao p {
+  font-size: 1.1rem;
+  color: rgb(238, 227, 238);
+  position: relative;
+  bottom: 40px;
+  text-align: start;
+}
+
+@media (max-width: 1000px) {
+  .introducao h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .introducao h1 {
+    font-size: 2rem;
+  }
+
+  .introducao h1::before {
+    width: 30px;
+    height: 10px;
+    left: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+  .introducao img {
+    display: none;
+  }
+}
+
+.introducao h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
